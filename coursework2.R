@@ -4,10 +4,12 @@ library(gstat)
 library(raster)
 library(sp)
 
-setwd("~/Documents/UCL/Term_2/Sensors and Location/noise-map")
+#setwd("~/Documents/UCL/Term_2/Sensors and Location/noise-map")
+setwd("C:/Users/Junju/Desktop/Masters/Term 2/Sensors and Location/Assignment 2/noise-map")
 # read data
 main_quad <- readOGR("boundaries/main_quad_d.shp")
-points <- readOGR("cleandata/080319NonPeak.geojson")
+#points <- readOGR("cleandata/080319NonPeak.geojson")
+points <- readOGR("cleandata/120319NonPeak.geojson")
 
 # plot map
 tm_shape(main_quad) + 
