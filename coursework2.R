@@ -44,6 +44,11 @@ tm_shape(r.m) +
   tm_shape(points_test) + tm_dots(size=0.005) +
   tm_legend(legend.outside=TRUE)
 
+
+
+
+noise_shapefile <- readOGR("rasters/080319NonPeak.shp")
+
 # write to raster
 #writeRaster(r.m, "noise_raster_test", format = "GTiff")
 
